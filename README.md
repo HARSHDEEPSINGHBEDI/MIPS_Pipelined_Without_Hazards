@@ -1,5 +1,5 @@
-# MIPS Pipelined Processor – Hazard-Free  
-*Harshdeep Singh*
+# MIPS Pipelined Processor – Hazard-Free - Harshdeep Singh
+
 
 This repository implements a classic **5-stage pipelined 32-bit MIPS Processor** in Verilog, arranged so that there are **no RAW hazards** in our test program.
 
