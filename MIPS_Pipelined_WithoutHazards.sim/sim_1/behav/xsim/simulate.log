@@ -1,0 +1,195 @@
+Time resolution is 1 ps
+
+==== Hazard-Free Pipelined MIPS Processor Simulation ====
+
+Instruction Memory Contents:
+  IMEM[0] = 0x014b4820
+  IMEM[1] = 0x016c5022
+  IMEM[2] = 0x01cd5824
+  IMEM[3] = 0x01f46825
+  IMEM[4] = 0x0235c82a
+  IMEM[5] = 0x8d0c0000
+  IMEM[6] = 0xad2e0004
+  IMEM[7] = 0x2d0d0005
+  IMEM[8] = 0x950e0002
+  IMEM[9] = 0x12560002
+  IMEM[10] = 0x1673fffc
+  IMEM[11] = 0x08000010
+  IMEM[12] = 0x0c000011
+  IMEM[13] = 0x01aa5820
+
+T = 15000 ns | PC = 0x00000000 | Instruction = 0x014b4820
+   $t0 = 5      $t1 = 3      $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 25000 ns | PC = 0x00000004 | Instruction = 0x016c5022
+   $t0 = 5      $t1 = 3      $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 35000 ns | PC = 0x00000008 | Instruction = 0x01cd5824
+   $t0 = 5      $t1 = 3      $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 45000 ns | PC = 0x0000000c | Instruction = 0x01f46825
+   $t0 = 5      $t1 = 3      $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 55000 ns | PC = 0x00000010 | Instruction = 0x0235c82a
+   $t0 = 5      $t1 = 3      $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 65000 ns | PC = 0x00000014 | Instruction = 0x8d0c0000
+   $t0 = 5      $t1 = 11     $t2 = 5      $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 75000 ns | PC = 0x00000018 | Instruction = 0xad2e0004
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 = 6    
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 85000 ns | PC = 0x0000001c | Instruction = 0x2d0d0005
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 7      $t5 = 2      $t6 = 1      $ra = x
+
+T = 95000 ns | PC = 0x00000020 | Instruction = 0x950e0002
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 7      $t5 = x  $t6 = 1      $ra = x
+
+T = 105000 ns | PC = 0x00000024 | Instruction = 0x12560002
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 7      $t5 = x  $t6 = 1      $ra = x
+
+T = 115000 ns | PC = 0x00000028 | Instruction = 0x1673fffc
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 = x  $t6 = 1      $ra = x
+
+T = 125000 ns | PC = 0x0000002c | Instruction = 0x08000010
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 = x  $t6 = 1      $ra = x
+
+T = 135000 ns | PC = 0x00000030 | Instruction = 0x0c000011
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 1      $ra = x
+
+T = 145000 ns | PC = 0x000000X8 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 155000 ns | PC = 0x0000006c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 165000 ns | PC = 0x00000040 | Instruction = 0x0307c824
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 175000 ns | PC = 0x00000044 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 185000 ns | PC = 0x00000048 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 195000 ns | PC = 0x0000004c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 205000 ns | PC = 0x00000050 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 215000 ns | PC = 0x00000054 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 225000 ns | PC = 0x00000058 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 235000 ns | PC = 0x0000005c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 245000 ns | PC = 0x00000060 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 255000 ns | PC = 0x00000064 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 265000 ns | PC = 0x00000068 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 275000 ns | PC = 0x0000006c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 285000 ns | PC = 0x00000070 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 295000 ns | PC = 0x00000074 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 305000 ns | PC = 0x00000078 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 315000 ns | PC = 0x0000007c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 325000 ns | PC = 0x00000080 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 335000 ns | PC = 0x00000084 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 345000 ns | PC = 0x00000088 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 355000 ns | PC = 0x0000008c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 365000 ns | PC = 0x00000090 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 375000 ns | PC = 0x00000094 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 385000 ns | PC = 0x00000098 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 395000 ns | PC = 0x0000009c | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+T = 405000 ns | PC = 0x000000a0 | Instruction = 0xxxxxxxxx
+   $t0 = 5      $t1 = 11     $t2 = 4294967295  $t3 =     0
+   $t4 = 3735928559  $t5 =     0  $t6 = 57005  $ra = x
+
+==== Final Data Memory State ====
+   MEM[0] = 0x0000abcd
+   MEM[1] = 0xdeadbeef
+   MEM[2] = 0xcafebabe
+   MEM[3] = 0xxxxxxxxx
+   MEM[4] = 0x87654321
+   MEM[5] = 0x0000000f
+   MEM[6] = 0xffffffff
+   MEM[7] = 0x00000abc
+   MEM[8] = 0x12312312
+   MEM[9] = 0xdededede
+
+==== Simulation Complete ====
+
+$finish called at time : 405 ns : File "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sim_1/new/tb.v" Line 78

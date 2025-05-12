@@ -1,0 +1,22 @@
+014B4820  // add  $t1, $t2, $t3    => $t1 = $t2 + $t3      (R[9] = R[10] + R[11])
+016C5022  // sub  $t2, $t3, $t4    => $t2 = $t3 - $t4      (R[10] = R[11] - R[12])
+01CD5824  // and  $t3, $t6, $t5    => $t3 = $t6 & $t5      (R[11] = R[14] & R[13])
+01F46825  // or   $t5, $t7, $a0    => $t5 = $t7 | $a0      (R[13] = R[15] | R[4])
+0235C82A  // slt  $t9, $s1, $s5    => $t9 = R[17] < R[21]  (OK even if $s5 uninit - result won't affect next inst)
+
+8D0C0000  // lw   $t4, 0($t0)      => $t4 = MEM[R[8]]
+AD2E0004  // sw   $t6, 4($t1)      => MEM[R[9]+4] = R[14]
+
+2D0D0005  // sltiu $t5, $t0, 5     => $t5 = R[8] < 5
+950E0002  // lhu   $t6, 2($t0)     => $t6 = zero_ext(MEM[R[8]+2])
+
+12560002  // beq   $s2, $s6, skip  => taken only if R[18] == R[22] (safe, R[18]=8, R[22] likely uninit → not taken)
+1673FFFC  // bne   $s3, $s3, back  => never taken, same register
+
+08000010  // j     0x40            => jump to inst[16]
+0C000011  // jal   0x44            => jump + link (R[31] = PC+4)
+
+01AA5820  // add   $t3, $t5, $t2   => R[11] = R[13] + R[10]
+020C6822  // sub   $t5, $s0, $t4   => R[13] = R[16] - R[12]
+01EF7025  // or    $t6, $t7, $t7   => R[14] = R[15] | R[15]
+0307C824  // and   $t9, $t8, $t7   => R[25] = R[24] & R[15]

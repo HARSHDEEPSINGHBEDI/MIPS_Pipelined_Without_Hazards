@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/adder.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu_bj.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu_cont.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alusrcmux.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/control_unit.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/dm.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/ex_mem_reg.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/id_ex_reg.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/if_id_reg.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/imem.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mem_wb_reg.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_brsel.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_jsel.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_memtoreg.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/pc.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/pipelined_processor.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/regdstmux.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/regfile.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/se.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/sl2.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/slj.v" \
+"../../../../MIPS_Pipelined_WithoutHazards.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

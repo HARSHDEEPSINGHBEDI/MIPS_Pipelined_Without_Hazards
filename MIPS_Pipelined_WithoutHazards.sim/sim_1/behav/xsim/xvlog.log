@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu_bj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_bj
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alu_cont.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/alusrcmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_alu_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_brsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_br_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_jsel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_jump_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/mux_memtoreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_memtoreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/pipelined_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelined_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/regdstmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regdst_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/se.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/sl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_left_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sources_1/new/slj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_left_2_jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado-25/MIPS_Pipelined_WithoutHazards/MIPS_Pipelined_WithoutHazards.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelined_processor_tb
