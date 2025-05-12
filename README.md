@@ -178,6 +178,75 @@ Branch decision mux: chooses between the sequential PC+4 and the branch target b
 Final PC multiplexer: selects the next `pc_in` from the branch mux output, the jump target, or sequential PC+4 under `Jump` control.
 
 
+### Program Memory (`tb/program1.mem`)
+
+```text
+014B4820  // I1  add   $t1, $t2, $t3
+016C5022  // I2  sub   $t2, $t3, $t4
+01CD5824  // I3  and   $t3, $t6, $t5
+01F46825  // I4  or    $t5, $t7, $a0
+0235C82A  // I5  slt   $t9, $s1, $s5
+8D0C0000  // I6  lw    $t4, 0($t0)
+AD2E0004  // I7  sw    $t6, 4($t1)
+2D0D0005  // I8  sltiu $t5, $t0, 5
+950E0002  // I9  lhu   $t6, 2($t0)
+12560002  // I10 beq   $s2, $s6, +2
+1673FFFC  // I11 bne   $s3, $s3, -4
+08000010  // I12 j     0x40
+0C000011  // I13 jal   0x44
+01AA5820  // I14 add   $t3, $t5, $t2
+020C6822  // I15 sub   $t5, $s0, $t4
+01EF7025  // I16 or    $t6, $t7, $t7
+0307C824  // I17 and   $t9, $t8, $t7
+```
+
+### Testbench Initializations (tb/pipelined_processor_tb.v)
+
+
+initial begin
+    // Reset and clock start
+    clk   = 0;
+    reset = 1;
+    #10   reset = 0;
+
+    // Register file initialization
+    uut.REGFILE.reg_array[0]  = 32'd0;   // $zero
+    uut.REGFILE.reg_array[1]  = 32'd1;   // $at
+    uut.REGFILE.reg_array[2]  = 32'd2;   // $v0
+    uut.REGFILE.reg_array[3]  = 32'd3;   // $v1
+    uut.REGFILE.reg_array[4]  = 32'd4;   // $a0
+    uut.REGFILE.reg_array[5]  = 32'd5;   // $a1
+    uut.REGFILE.reg_array[6]  = 32'd6;   // $a2
+    uut.REGFILE.reg_array[7]  = 32'd7;   // $a3
+    uut.REGFILE.reg_array[8]  = 32'd5;   // $t0
+    uut.REGFILE.reg_array[9]  = 32'd3;   // $t1
+    uut.REGFILE.reg_array[10] = 32'd5;   // $t2
+    uut.REGFILE.reg_array[11] = 32'd6;   // $t3
+    uut.REGFILE.reg_array[12] = 32'd7;   // $t4
+    uut.REGFILE.reg_array[13] = 32'd2;   // $t5
+    uut.REGFILE.reg_array[14] = 32'd1;   // $t6
+    uut.REGFILE.reg_array[15] = 32'd7;   // $t7
+    uut.REGFILE.reg_array[16] = 32'd6;   // $s0
+    uut.REGFILE.reg_array[18] = 32'd8;   // $s2
+    uut.REGFILE.reg_array[19] = 32'd8;   // $s3
+
+    // Data memory initialization
+    uut.MEM.memory[0] = 32'h0000ABCD;
+    uut.MEM.memory[1] = 32'hDEADBEEF;
+    uut.MEM.memory[2] = 32'hCAFEBABE;
+    uut.MEM.memory[3] = 32'h12345678;
+    uut.MEM.memory[4] = 32'h87654321;
+    uut.MEM.memory[5] = 32'h0000000F;
+    uut.MEM.memory[6] = 32'hFFFFFFFF;
+    uut.MEM.memory[7] = 32'h00000ABC;
+    uut.MEM.memory[8] = 32'h12312312;
+    uut.MEM.memory[9] = 32'hDEDEDEDE;
+
+    // Load instruction memory
+    $readmemh("program1.mem", uut.IMEM.memory);
+end
+
+
 
 
 
