@@ -178,7 +178,7 @@ Branch decision mux: chooses between the sequential PC+4 and the branch target b
 Final PC multiplexer: selects the next `pc_in` from the branch mux output, the jump target, or sequential PC+4 under `Jump` control.
 
 
-### Program Memory (`tb/program1.mem`)
+## Program Memory (`tb/program1.mem`)
 
 ```text
 014B4820  // I1  add   $t1, $t2, $t3
@@ -200,7 +200,7 @@ AD2E0004  // I7  sw    $t6, 4($t1)
 0307C824  // I17 and   $t9, $t8, $t7
 ```
 
-### Testbench Initializations (tb/pipelined_processor_tb.v)
+## Testbench Initializations (tb/pipelined_processor_tb.v)
 
 
 initial begin
@@ -245,6 +245,7 @@ initial begin
     // Load instruction memory
     $readmemh("program1.mem", uut.IMEM.memory);
 end
+
 
 
 
