@@ -58,7 +58,7 @@ MIPS_Pipelined_WithoutHazards/
 │   ├── pipelined_processor_tb.v  # Testbench & waveform logger
 │   └── program1.mem              # 17 instruction hex words
 └── README.md
-
+```
 
 ---
 
